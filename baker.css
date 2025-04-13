@@ -1,0 +1,1085 @@
+@charset "UTF-8";
+body {max-width: 1200px; 
+    color:#002256;
+    font-family: sans-serif; 
+background-color: #F2E8DF;
+margin: 0 auto;}
+/* add this to override the default margin */
+
+html
+{
+    box-sizing: border-box;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+h1 {
+    color:#002256;
+    border-bottom: 1px solid #002256;
+}
+     p {
+         font-size: large;
+         font-family: sans-serif;
+         font-size: 19px;
+     }
+     h2 {
+         color:#002256;
+         border-top: 1px groove #002256;
+         border-bottom: 1px groove #002256;
+     }
+    body {
+        background-color: #FDB872;
+    }
+
+h3 { font: bold 1.2em times, Serif;
+    text-transform: uppercase;
+    color: #002256;
+    border-top: 1px solid #002256;
+    border-bottom: 1px solid #002256;}
+
+    h4 { font: bold 1.2em times, Serif;
+        text-transform: uppercase;
+        color: #002256; }
+
+        img
+        {
+            border-style:groove;
+            border-color: #002256;
+        }
+
+        #hl4
+        {
+border-style: none;
+        }
+
+    /* This allows for writing notes in css*/
+
+    /*
+    # = ID 
+    . = Class
+    */
+
+/* The Buttons */
+.button
+{
+background-color: #002256;
+border: none;
+color: #F2E8DF;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 18px;
+margin: 6px 3px;
+padding: 20px 40px;
+cursor: pointer;
+}
+
+    /*--- Nav Bar ---*/
+.main_nav {
+    display: flex;
+    align-items: center;
+    list-style: none; /* This line removes the bullets in ul*/
+    background-color: #002256;
+    padding: .3em;
+    margin: 0;
+}
+
+/*Nav Style*/
+.main_nav a {
+color: #FDB872;
+padding: 60px 40px;
+text-decoration: none;
+margin: 20px;
+font-size: 30px;
+}
+
+/*Hover Style*/
+.main_nav a:hover {
+background-color: #FDB872;
+color: rgb(57, 79, 94);
+}
+
+/* Logo will be on the left side if it is at the top of li*/
+li.logo {
+    margin-right: auto;
+}
+/* Logo will be on the right side if it is at the bottom of li */
+li.logo {
+    margin-left: auto;
+}
+
+/*--Home Page Hero Image--*/
+
+.hero_image
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.365)),url(jpg/places/diner_by_michelle_raponi.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hero_header
+{
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+.hero_text
+{
+    text-align: left;
+    position: absolute;
+    color: #ffffff;
+    top: 60%;
+    text-shadow: .05em .05em 1em black;
+    margin-left: 100px;
+    font-size: large;
+}
+
+/*--Menu Page Hero Image--*/
+
+.hero_menu
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.365)),url(jpg/items/black_board_by_stokpic.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hero_header_menu
+{
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+.hero_text
+{
+    text-align: left;
+    position: absolute;
+    color: #ffffff;
+    top: 55%;
+    text-shadow: .05em .05em 1em black;
+    font-size: large;
+}
+
+/*--About Page Hero Image--*/
+
+.about_hero_image
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.365)),url(jpg/sweets/donuts_By_susana_cipriano.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.about_hero_header
+{
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+.hero_text
+{
+    text-align: left;
+    position: absolute;
+    color: #ffffff;
+    top: 55%;
+    text-shadow: .05em .05em 1em black;
+    margin-left: 100px;
+    font-size: large;
+}
+
+/*--Support Page Hero Image--*/
+
+.support_hero_image
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.365)),url(jpg/items/contact_us_by_jessica45.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+.support_hero_header
+{
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+
+/* Home Page Grid*/
+#index_grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows:repeat(3, auto);
+    grid-template-areas:
+    'opener opener opener'
+
+    'menu_items menu_items menu_items'
+
+    'p1 p2 p3'
+    
+    'p4 p5 p6';
+
+}
+
+/*--#opener margin: 60px 300px
+img
+{
+    max-width: 100%;
+}
+background-color: #002256;
+    margin: 0 auto;--*/
+
+/*Home Page Grid Items*/
+
+#opener
+{
+grid-area:opener;
+object-fit: cover;
+text-align: center;
+}
+
+#menu_items
+{
+font: bold 1.2em times, Serif;
+text-transform: uppercase;
+color: #002256;
+grid-area:menu_items;
+object-fit: cover;
+text-align: center;
+}
+
+#p1
+{
+grid-area:p1;
+object-fit: cover;
+text-align: center;
+}
+
+#p2
+{
+grid-area:p2;
+object-fit: cover;
+text-align: center;
+}
+
+#p3
+{
+grid-area:p3;
+object-fit: cover;
+text-align: center;
+}
+
+#p4
+{
+grid-area:p4;
+object-fit: cover;
+text-align: center;
+}
+
+#p5
+{
+grid-area:p5;
+object-fit: cover;
+text-align: center;
+}
+
+#p6
+{
+grid-area:p6;
+object-fit: cover;
+text-align: center;
+}
+
+/*About Page Grid*/
+#about_grid
+{
+    display: grid;
+    grid-template-columns:repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    'opening opening opening opening'
+
+    'about about about about'
+
+    'hl hl hl hl'
+    
+    'hl1 hl1 hl2 hl2'
+
+    'hl3 hl3 hl4 hl4';
+
+}
+
+/*About Page Grid Items*/
+
+#start
+{
+grid-area:opening;
+object-fit: cover;
+text-align: center;
+}
+
+#about
+{
+font: bold 1.2em times, Serif;
+text-transform: uppercase;
+color: #002256;
+grid-area:about;
+object-fit: cover;
+text-align: center;
+}
+
+#hl
+{
+grid-area:hl;
+object-fit: cover;
+text-align: center;
+}
+
+#hl1
+{
+grid-area:hl1;
+object-fit: cover;
+text-align: center;
+}
+
+#hl2
+{
+grid-area:hl2;
+object-fit: cover;
+text-align: center;
+}
+
+#hl3
+{
+grid-area:hl3;
+object-fit: cover;
+text-align: center;
+}
+
+#hl4
+{
+grid-area:hl4;
+object-fit: cover;
+text-align: center;
+}
+
+/*Contact Page Grid*/
+#contact_grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    'help help help help help'
+
+    'info info info info info'
+
+    'work work work work work';
+
+}
+
+/*Contact Page Grid Items*/
+
+#support
+{
+grid-area:help;
+object-fit: cover;
+text-align: center;
+}
+
+#Hours
+{
+grid-area:work;
+object-fit: cover;
+text-align: center;
+}
+
+#info_support
+{
+    grid-area:info;
+    object-fit: cover;
+    text-align: center;
+}
+
+/* Menu Page Grid*/
+#menu_grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    'board board board board'
+    'cup cheese_cake hbun maca'
+    'cake stick sugarc fruitc';
+
+}
+
+/*Menu Page Grid Items*/
+
+#black_board
+{
+grid-area:board;
+object-fit: cover;
+text-align: center;
+}
+
+#cupcake
+{
+grid-area:cup;
+object-fit: cover;
+text-align: center;
+}
+
+#cheese_cake
+{
+grid-area:cheese_cake;
+object-fit: cover;
+text-align: center;
+}
+
+#macarons
+{
+grid-area:maca;
+object-fit: cover;
+text-align: center;
+}
+
+#honey_bun
+{
+grid-area:hbun;
+object-fit: cover;
+text-align: center;
+}
+
+#cake
+{
+    grid-area:cake;
+    object-fit: cover;
+    text-align: center;
+}
+
+#stick
+{
+    grid-area:stick;
+    object-fit: cover;
+    text-align: center;
+}
+
+#scookie
+{
+    grid-area:sugarc;
+    object-fit: cover;
+    text-align: center;
+}
+
+#fcookie
+{
+    grid-area:fruitc;
+    object-fit: cover;
+    text-align: center;
+}
+
+/* Media Queries 800px*/
+@media screen and (max-width: 800px)
+{
+
+    html
+{
+    margin:auto;
+    box-sizing: border-box;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+    /* Home Page Grid Media Queries */
+#index_grid
+{
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+    'opener'
+
+    'menu_items'
+
+    'p1'
+    'p2'
+    'p3'
+    'p4'
+    'p5'
+    'p6';
+
+}
+
+/*About Page Grid Media Queries */
+#about_grid
+{
+    display: grid;
+    grid-template-columns:repeat(7, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+    'opening'
+    'about'
+    'hl'
+    'hl1' 
+    'hl2'
+    'hl3'
+    'hl4';
+
+}
+
+/*Contact Page Grid Media Queries */
+#contact_grid
+{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+    'help'
+    'info'
+    'work';
+
+}
+
+/* Menu Page Grid Media Queries */
+#menu_grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    'board board'
+    'cup cheese_cake'
+    'hbun maca'
+    'cake stick'
+    'sugarc fruitc';
+
+}
+
+/* Media Queries Items*/
+
+/*Home Page Grid Items*/
+
+#opener
+{
+grid-area:opener;
+object-fit: cover;
+text-align: center;
+}
+
+#menu_items
+{
+font: bold 1.2em times, Serif;
+text-transform: uppercase;
+color: #002256;
+grid-area:menu_items;
+object-fit: cover;
+text-align: center;
+}
+
+#p1
+{
+grid-area:p1;
+object-fit: cover;
+text-align: center;
+}
+
+#p2
+{
+grid-area:p2;
+object-fit: cover;
+text-align: center;
+}
+
+#p3
+{
+grid-area:p3;
+object-fit: cover;
+text-align: center;
+}
+
+#p4
+{
+grid-area:p4;
+object-fit: cover;
+text-align: center;
+}
+
+#p5
+{
+grid-area:p5;
+object-fit: cover;
+text-align: center;
+}
+
+#p6
+{
+grid-area:p6;
+object-fit: cover;
+text-align: center;
+}
+
+/*Contact Page Grid Items*/
+
+#support
+{
+grid-area:help;
+object-fit: cover;
+text-align: center;
+}
+
+#Hours
+{
+grid-area:work;
+object-fit: cover;
+text-align: center;
+}
+
+#info_support
+{
+    grid-area:info;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*Menu Page Grid Items*/
+
+#black_board
+{
+grid-area:board;
+object-fit: cover;
+text-align: center;
+}
+
+#cupcake
+{
+grid-area:cup;
+object-fit: cover;
+text-align: center;
+}
+
+#cheese_cake
+{
+grid-area:cheese_cake;
+object-fit: cover;
+text-align: center;
+}
+
+#macarons
+{
+grid-area:maca;
+object-fit: cover;
+text-align: center;
+}
+
+#honey_bun
+{
+grid-area:hbun;
+object-fit: cover;
+text-align: center;
+}
+
+#cake
+{
+    grid-area:cake;
+    object-fit: cover;
+    text-align: center;
+}
+
+#stick
+{
+    grid-area:stick;
+    object-fit: cover;
+    text-align: center;
+}
+
+#scookie
+{
+    grid-area:sugarc;
+    object-fit: cover;
+    text-align: center;
+}
+
+#fcookie
+{
+    grid-area:fruitc;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*About Page Grid Items*/
+
+#start
+{
+grid-area:opening;
+object-fit: cover;
+text-align: center;
+}
+
+#about
+{
+font: bold 1.2em times, Serif;
+text-transform: uppercase;
+color: #002256;
+grid-area:about;
+object-fit: cover;
+text-align: center;
+}
+
+#hl
+{
+grid-area:hl;
+object-fit: cover;
+text-align: center;
+}
+
+#hl1
+{
+grid-area:hl1;
+object-fit: cover;
+text-align: center;
+}
+
+#hl2
+{
+grid-area:hl2;
+object-fit: cover;
+text-align: center;
+}
+
+#hl3
+{
+grid-area:hl3;
+object-fit: cover;
+text-align: center;
+}
+
+#hl4
+{
+grid-area:hl4;
+object-fit: cover;
+text-align: center;
+}
+}
+
+/* Media Queries 1000px*/
+@media screen and (max-width: 1000x)
+{
+
+    html
+{
+    margin:auto;
+    box-sizing: border-box;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+    /* Home Page Grid Media Queries */
+#index_grid
+{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    'opener opener'
+
+    'menu_items menu_items'
+
+    'p1 p2'
+
+    'p3 p4'
+
+    'p5 p6';
+
+}
+
+/*About Page Grid Media Queries */
+#about_grid
+{
+    display: grid;
+    grid-template-columns:repeat(7, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas:
+    'opening'
+    'about'
+    'hl'
+    'hl1' 
+    'hl2'
+    'hl3'
+    'hl4';
+
+}
+
+/*Contact Page Grid Media Queries */
+#contact_grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    'help help help'
+    'info info info'
+    'work work work';
+
+}
+
+/* Menu Page Grid Media Queries */
+#menu_grid
+{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+    'board board board board board'
+    'cup . . . cheese_cake'
+    'hbun . . . maca'
+    'cake . . . stick'
+    'sugarc . . . fruitc';
+
+}
+
+/* Media Queries Items*/
+
+/*Home Page Grid Items*/
+
+#opener
+{
+grid-area:opener;
+object-fit: cover;
+text-align: center;
+}
+
+#menu_items
+{
+font: bold 1.2em times, Serif;
+text-transform: uppercase;
+color: #002256;
+grid-area:menu_items;
+object-fit: cover;
+text-align: center;
+}
+
+#p1
+{
+grid-area:p1;
+object-fit: cover;
+text-align: center;
+}
+
+#p2
+{
+grid-area:p2;
+object-fit: cover;
+text-align: center;
+}
+
+#p3
+{
+grid-area:p3;
+object-fit: cover;
+text-align: center;
+}
+
+#p4
+{
+grid-area:p4;
+object-fit: cover;
+text-align: center;
+}
+
+#p5
+{
+grid-area:p5;
+object-fit: cover;
+text-align: center;
+}
+
+#p6
+{
+grid-area:p6;
+object-fit: cover;
+text-align: center;
+}
+
+/*Contact Page Grid Items*/
+
+#support
+{
+grid-area:help;
+object-fit: cover;
+text-align: center;
+}
+
+#Hours
+{
+grid-area:work;
+object-fit: cover;
+text-align: center;
+}
+
+#info_support
+{
+    grid-area:info;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*Menu Page Grid Items*/
+
+#black_board
+{
+grid-area:board;
+object-fit: cover;
+text-align: center;
+}
+
+#cupcake
+{
+grid-area:cup;
+object-fit: cover;
+text-align: center;
+}
+
+#cheese_cake
+{
+grid-area:cheese_cake;
+object-fit: cover;
+text-align: center;
+}
+
+#macarons
+{
+grid-area:maca;
+object-fit: cover;
+text-align: center;
+}
+
+#honey_bun
+{
+grid-area:hbun;
+object-fit: cover;
+text-align: center;
+}
+
+#cake
+{
+    grid-area:cake;
+    object-fit: cover;
+    text-align: center;
+}
+
+#stick
+{
+    grid-area:stick;
+    object-fit: cover;
+    text-align: center;
+}
+
+#scookie
+{
+    grid-area:sugarc;
+    object-fit: cover;
+    text-align: center;
+}
+
+#fcookie
+{
+    grid-area:fruitc;
+    object-fit: cover;
+    text-align: center;
+}
+
+/*About Page Grid Items*/
+
+#start
+{
+grid-area:opening;
+object-fit: cover;
+text-align: center;
+}
+
+#about
+{
+font: bold 1.2em times, Serif;
+text-transform: uppercase;
+color: #002256;
+grid-area:about;
+object-fit: cover;
+text-align: center;
+}
+
+#hl
+{
+grid-area:hl;
+object-fit: cover;
+text-align: center;
+}
+
+#hl1
+{
+grid-area:hl1;
+object-fit: cover;
+text-align: center;
+}
+
+#hl2
+{
+grid-area:hl2;
+object-fit: cover;
+text-align: center;
+}
+
+#hl3
+{
+grid-area:hl3;
+object-fit: cover;
+text-align: center;
+}
+
+#hl4
+{
+grid-area:hl4;
+object-fit: cover;
+text-align: center;
+}
+}
