@@ -2,7 +2,9 @@
 body {max-width: 1200px; 
     color:#002256;
     font-family: sans-serif; 
-background-color: #F2E8DF;
+background-color: #FDB872;
+background-image: radial-gradient(#f2e8df 1.2px, transparent 1.2px);
+background-size: 17px 17px;
 margin: 0 auto;}
 /* add this to override the default margin */
 
@@ -30,9 +32,6 @@ h1 {
          border-top: 1px groove #002256;
          border-bottom: 1px groove #002256;
      }
-    body {
-        background-color: #FDB872;
-    }
 
 h3 { font: bold 1.2em times, Serif;
     text-transform: uppercase;
@@ -47,13 +46,10 @@ h3 { font: bold 1.2em times, Serif;
         img
         {
             border-style:groove;
-            border-color: #002256;
-        }
+            border-color: #002256;}
 
         #hl4
-        {
-border-style: none;
-        }
+        {border-style: none;}
 
     /* This allows for writing notes in css*/
 
@@ -800,7 +796,7 @@ text-align: center;
 }
 }
 
-/* Media Queries 1000px*/
+/* Media Queries 1050px*/
 @media screen and (max-width: 1000x)
 {
 

@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Baker's Dozens - About</title>
     <link rel="stylesheet" href="baker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+    $(function()
+    {
+    $('#imghover').hover(function()//img with mouse
+    {
+    $('#imghover').attr('src', "jpg/sweets/macarons_by_tesa_robbins.jpg");
+}, 
+    function()//img without mouse hover
+    {
+        $('#imghover').attr('src', "jpg/sweets/churros_by_daria_yakovleva.jpg");    
+})
+    })
+    </script>
 </head>
 <body>
     <header>
@@ -39,9 +54,8 @@
         <h3>The Baker's Dozens - About Us</h3>
     <p>The Baker's Dozens is a bakery that was built within the walls of Ridge Meadow High. We serve delicious pastries with the support of cafeteria staff. <br>
         We also offer part-time jobs & work with our school's home economics class to teach you how to make these treats yourself.</p>
-    <img src="jpg/sweets/macarons_by_tesa_robbins.jpg" alt="All fresh" width="250">
-    <img src="jpg/sweets/donuts_By_susana_cipriano.jpg" alt="Hot & Ready" width="250">
-    <img src="jpg/sweets/churros_by_daria_yakovleva.jpg" alt="Various snacks" width="250">
+        <p>Hover over the photo to see a diffrent sweet</p>
+    <img src="jpg/sweets/macarons_by_tesa_robbins.jpg" alt="All fresh"  id="imghover" width="250">
 </div>
 
 <div id="hl">
