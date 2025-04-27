@@ -2,16 +2,12 @@
 body {max-width: 1200px; 
     color:#002256;
     font-family: sans-serif; 
-background-color: #F2E8DF;
+background-color: #FDB872;
+background-image: radial-gradient(#f2e8df 1.2px, transparent 1.2px);
+background-size: 17px 17px;
 margin: 0 auto;}
 /* add this to override the default margin */
-
 html
-{
-    box-sizing: border-box;
-}
-
-*
 {
     box-sizing: border-box;
 }
@@ -30,9 +26,6 @@ h1 {
          border-top: 1px groove #002256;
          border-bottom: 1px groove #002256;
      }
-    body {
-        background-color: #FDB872;
-    }
 
 h3 { font: bold 1.2em times, Serif;
     text-transform: uppercase;
@@ -47,13 +40,10 @@ h3 { font: bold 1.2em times, Serif;
         img
         {
             border-style:groove;
-            border-color: #002256;
-        }
+            border-color: #002256;}
 
         #hl4
-        {
-border-style: none;
-        }
+        {border-style: none;}
 
     /* This allows for writing notes in css*/
 
@@ -78,7 +68,7 @@ cursor: pointer;
 }
 
     /*--- Nav Bar ---*/
-.main_nav {
+    .main_nav {
     display: flex;
     align-items: center;
     list-style: none; /* This line removes the bullets in ul*/
@@ -111,6 +101,39 @@ li.logo {
     margin-left: auto;
 }
 
+#quotes {
+    margin:38px;
+    padding:18px;
+    background-color:#fff8f0;
+    border-radius:8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#quotes h2 {
+    text-align:center;
+    margin-bottom:18px;
+}
+
+#quotes blockquote {
+    font-style: normal;
+    margin:18px auto;
+    text-align:center;
+    max-width:575px;
+    color:#555;
+}
+
+/*-- Hero Text --*/
+.hero_text
+{
+    text-align: left;
+    position: absolute;
+    color: #ffffff;
+    top: 60%;
+    text-shadow: .05em .05em 1em black;
+    margin-left: 100px;
+    font-size: large;
+}
+
 /*--Home Page Hero Image--*/
 
 .hero_image
@@ -133,17 +156,6 @@ li.logo {
     text-shadow: .05em .05em .1em black;
     font-size: 3em;
     margin: 20px;
-}
-
-.hero_text
-{
-    text-align: left;
-    position: absolute;
-    color: #ffffff;
-    top: 60%;
-    text-shadow: .05em .05em 1em black;
-    margin-left: 100px;
-    font-size: large;
 }
 
 /*--Menu Page Hero Image--*/
@@ -170,16 +182,6 @@ li.logo {
     margin: 20px;
 }
 
-.hero_text
-{
-    text-align: left;
-    position: absolute;
-    color: #ffffff;
-    top: 55%;
-    text-shadow: .05em .05em 1em black;
-    font-size: large;
-}
-
 /*--About Page Hero Image--*/
 
 .about_hero_image
@@ -202,17 +204,6 @@ li.logo {
     text-shadow: .05em .05em .1em black;
     font-size: 3em;
     margin: 20px;
-}
-
-.hero_text
-{
-    text-align: left;
-    position: absolute;
-    color: #ffffff;
-    top: 55%;
-    text-shadow: .05em .05em 1em black;
-    margin-left: 100px;
-    font-size: large;
 }
 
 /*--Support Page Hero Image--*/
@@ -239,12 +230,263 @@ li.logo {
     margin: 20px;
 }
 
+/*Home Page Grid Items*/
 
-/* Home Page Grid*/
+#opener
+{
+grid-area:opener;
+object-fit: cover;
+text-align: center;
+}
+
+#menu_items
+{
+font: bold 1.2em times, Serif;
+text-transform: uppercase;
+color: #002256;
+grid-area:menu_items;
+object-fit: cover;
+text-align: center;
+}
+
+#p1
+{
+grid-area:p1;
+object-fit: cover;
+text-align: center;
+}
+
+#p2
+{
+grid-area:p2;
+object-fit: cover;
+text-align: center;
+}
+
+#p3
+{
+grid-area:p3;
+object-fit: cover;
+text-align: center;
+}
+
+#p4
+{
+grid-area:p4;
+object-fit: cover;
+text-align: center;
+}
+
+#p5
+{
+grid-area:p5;
+object-fit: cover;
+text-align: center;
+}
+
+#p6
+{
+grid-area:p6;
+object-fit: cover;
+text-align: center;
+}
+
+#quotes
+{
+grid-area:lines;
+object-fit: cover;
+text-align: center;
+}
+
+#fact
+{
+grid-area:fact;
+object-fit: cover;
+text-align: center;
+}
+
+#to_about
+{
+grid-area:about;
+object-fit: cover;
+text-align: center;
+}
+
+#end_h
+{
+grid-area:end;
+object-fit: cover;
+text-align: center;
+}
+
+/*About Page Grid Items*/
+
+#start
+{
+grid-area:opening;
+object-fit: cover;
+text-align: center;
+}
+
+#about
+{
+font: bold 1.2em times, Serif;
+text-transform: uppercase;
+color: #002256;
+grid-area:about;
+object-fit: cover;
+text-align: center;
+}
+
+#hl
+{
+grid-area:hl;
+object-fit: cover;
+text-align: center;
+}
+
+#hl1
+{
+grid-area:hl1;
+object-fit: cover;
+text-align: center;
+}
+
+#hl2
+{
+grid-area:hl2;
+object-fit: cover;
+text-align: center;
+}
+
+#hl3
+{
+grid-area:hl3;
+object-fit: cover;
+text-align: center;
+}
+
+#hl4
+{
+grid-area:hl4;
+object-fit: cover;
+text-align: center;
+}
+
+#end_a
+{
+grid-area:end;
+object-fit: cover;
+text-align: center;
+}
+
+/*Contact Page Grid Items*/
+
+#support
+{
+grid-area:help;
+object-fit: cover;
+text-align: center;
+}
+
+#Hours
+{
+grid-area:work;
+object-fit: cover;
+text-align: center;
+}
+
+#info_support
+{
+    grid-area:info;
+    object-fit: cover;
+    text-align: center;
+}
+
+#end_s
+{
+grid-area:end;
+object-fit: cover;
+text-align: center;
+}
+
+/*Menu Page Grid Items*/
+
+#black_board
+{
+grid-area:board;
+object-fit: cover;
+text-align: center;
+}
+
+#cupcake
+{
+grid-area:cup;
+object-fit: cover;
+text-align: center;
+}
+
+#cheese_cake
+{
+grid-area:cheese_cake;
+object-fit: cover;
+text-align: center;
+}
+
+#macarons
+{
+grid-area:maca;
+object-fit: cover;
+text-align: center;
+}
+
+#honey_bun
+{
+grid-area:hbun;
+object-fit: cover;
+text-align: center;
+}
+
+#cake
+{
+grid-area:cake;
+object-fit: cover;
+text-align: center;
+}
+
+#stick
+{
+grid-area:stick;
+object-fit: cover;
+text-align: center;
+}
+
+#scookie
+{
+grid-area:sugarc;
+object-fit: cover;
+text-align: center;
+}
+
+#fcookie
+{
+grid-area:fruitc;
+object-fit: cover;
+text-align: center;
+}
+
+#end_m
+{
+grid-area:end;
+object-fit: cover;
+text-align: center;
+}
+
+/* Home Page Grid 1200px*/
 #index_grid
 {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(8, 400px);
     grid-template-rows:repeat(3, auto);
     grid-template-areas:
     'opener opener opener'
@@ -253,84 +495,23 @@ li.logo {
 
     'p1 p2 p3'
     
-    'p4 p5 p6';
+    'p4 p5 p6'
+
+    'lines lines lines'
+
+    'fact fact fact'
+
+    'about about about'
+    
+    'end end end';
 
 }
 
-/*--#opener margin: 60px 300px
-img
-{
-    max-width: 100%;
-}
-background-color: #002256;
-    margin: 0 auto;--*/
-
-/*Home Page Grid Items*/
-
-#opener
-{
-grid-area:opener;
-object-fit: cover;
-text-align: center;
-}
-
-#menu_items
-{
-font: bold 1.2em times, Serif;
-text-transform: uppercase;
-color: #002256;
-grid-area:menu_items;
-object-fit: cover;
-text-align: center;
-}
-
-#p1
-{
-grid-area:p1;
-object-fit: cover;
-text-align: center;
-}
-
-#p2
-{
-grid-area:p2;
-object-fit: cover;
-text-align: center;
-}
-
-#p3
-{
-grid-area:p3;
-object-fit: cover;
-text-align: center;
-}
-
-#p4
-{
-grid-area:p4;
-object-fit: cover;
-text-align: center;
-}
-
-#p5
-{
-grid-area:p5;
-object-fit: cover;
-text-align: center;
-}
-
-#p6
-{
-grid-area:p6;
-object-fit: cover;
-text-align: center;
-}
-
-/*About Page Grid*/
+/*About Page Grid 1200px*/
 #about_grid
 {
     display: grid;
-    grid-template-columns:repeat(5, auto);
+    grid-template-columns:repeat(8, auto);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
     'opening opening opening opening'
@@ -339,486 +520,55 @@ text-align: center;
 
     'hl hl hl hl'
     
-    'hl1 hl1 hl2 hl2'
+    'hl3 hl3 hl2 hl2'
 
-    'hl3 hl3 hl4 hl4';
+    'hl1 hl1 hl1 hl1'
+    
+    'hl4 hl4 hl4 hl4'
+    
+    'end end end end';
 
 }
 
-/*About Page Grid Items*/
-
-#start
-{
-grid-area:opening;
-object-fit: cover;
-text-align: center;
-}
-
-#about
-{
-font: bold 1.2em times, Serif;
-text-transform: uppercase;
-color: #002256;
-grid-area:about;
-object-fit: cover;
-text-align: center;
-}
-
-#hl
-{
-grid-area:hl;
-object-fit: cover;
-text-align: center;
-}
-
-#hl1
-{
-grid-area:hl1;
-object-fit: cover;
-text-align: center;
-}
-
-#hl2
-{
-grid-area:hl2;
-object-fit: cover;
-text-align: center;
-}
-
-#hl3
-{
-grid-area:hl3;
-object-fit: cover;
-text-align: center;
-}
-
-#hl4
-{
-grid-area:hl4;
-object-fit: cover;
-text-align: center;
-}
-
-/*Contact Page Grid*/
+/*Contact Page Grid 1200px*/
 #contact_grid
 {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
     'help help help help help'
 
     'info info info info info'
 
-    'work work work work work';
+    'work work work work work'
+
+    'end end end end end';
 
 }
 
-/*Contact Page Grid Items*/
-
-#support
-{
-grid-area:help;
-object-fit: cover;
-text-align: center;
-}
-
-#Hours
-{
-grid-area:work;
-object-fit: cover;
-text-align: center;
-}
-
-#info_support
-{
-    grid-area:info;
-    object-fit: cover;
-    text-align: center;
-}
-
-/* Menu Page Grid*/
+/* Menu Page Grid 1200px*/
 #menu_grid
 {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
     'board board board board'
-    'cup cheese_cake hbun maca'
-    'cake stick sugarc fruitc';
+    'cheese_cake cup hbun cake'
+    'maca stick sugarc fruitc'
+    'end end end end';
 
-}
-
-/*Menu Page Grid Items*/
-
-#black_board
-{
-grid-area:board;
-object-fit: cover;
-text-align: center;
-}
-
-#cupcake
-{
-grid-area:cup;
-object-fit: cover;
-text-align: center;
-}
-
-#cheese_cake
-{
-grid-area:cheese_cake;
-object-fit: cover;
-text-align: center;
-}
-
-#macarons
-{
-grid-area:maca;
-object-fit: cover;
-text-align: center;
-}
-
-#honey_bun
-{
-grid-area:hbun;
-object-fit: cover;
-text-align: center;
-}
-
-#cake
-{
-    grid-area:cake;
-    object-fit: cover;
-    text-align: center;
-}
-
-#stick
-{
-    grid-area:stick;
-    object-fit: cover;
-    text-align: center;
-}
-
-#scookie
-{
-    grid-area:sugarc;
-    object-fit: cover;
-    text-align: center;
-}
-
-#fcookie
-{
-    grid-area:fruitc;
-    object-fit: cover;
-    text-align: center;
-}
-
-/* Media Queries 800px*/
-@media screen and (max-width: 800px)
-{
-
-    html
-{
-    margin:auto;
-    box-sizing: border-box;
-}
-
-*
-{
-    box-sizing: border-box;
-}
-    /* Home Page Grid Media Queries */
-#index_grid
-{
-    display: grid;
-    grid-template-columns: repeat(8, auto);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas:
-    'opener'
-
-    'menu_items'
-
-    'p1'
-    'p2'
-    'p3'
-    'p4'
-    'p5'
-    'p6';
-
-}
-
-/*About Page Grid Media Queries */
-#about_grid
-{
-    display: grid;
-    grid-template-columns:repeat(7, auto);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas:
-    'opening'
-    'about'
-    'hl'
-    'hl1' 
-    'hl2'
-    'hl3'
-    'hl4';
-
-}
-
-/*Contact Page Grid Media Queries */
-#contact_grid
-{
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas:
-    'help'
-    'info'
-    'work';
-
-}
-
-/* Menu Page Grid Media Queries */
-#menu_grid
-{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:
-    'board board'
-    'cup cheese_cake'
-    'hbun maca'
-    'cake stick'
-    'sugarc fruitc';
-
-}
-
-/* Media Queries Items*/
-
-/*Home Page Grid Items*/
-
-#opener
-{
-grid-area:opener;
-object-fit: cover;
-text-align: center;
-}
-
-#menu_items
-{
-font: bold 1.2em times, Serif;
-text-transform: uppercase;
-color: #002256;
-grid-area:menu_items;
-object-fit: cover;
-text-align: center;
-}
-
-#p1
-{
-grid-area:p1;
-object-fit: cover;
-text-align: center;
-}
-
-#p2
-{
-grid-area:p2;
-object-fit: cover;
-text-align: center;
-}
-
-#p3
-{
-grid-area:p3;
-object-fit: cover;
-text-align: center;
-}
-
-#p4
-{
-grid-area:p4;
-object-fit: cover;
-text-align: center;
-}
-
-#p5
-{
-grid-area:p5;
-object-fit: cover;
-text-align: center;
-}
-
-#p6
-{
-grid-area:p6;
-object-fit: cover;
-text-align: center;
-}
-
-/*Contact Page Grid Items*/
-
-#support
-{
-grid-area:help;
-object-fit: cover;
-text-align: center;
-}
-
-#Hours
-{
-grid-area:work;
-object-fit: cover;
-text-align: center;
-}
-
-#info_support
-{
-    grid-area:info;
-    object-fit: cover;
-    text-align: center;
-}
-
-/*Menu Page Grid Items*/
-
-#black_board
-{
-grid-area:board;
-object-fit: cover;
-text-align: center;
-}
-
-#cupcake
-{
-grid-area:cup;
-object-fit: cover;
-text-align: center;
-}
-
-#cheese_cake
-{
-grid-area:cheese_cake;
-object-fit: cover;
-text-align: center;
-}
-
-#macarons
-{
-grid-area:maca;
-object-fit: cover;
-text-align: center;
-}
-
-#honey_bun
-{
-grid-area:hbun;
-object-fit: cover;
-text-align: center;
-}
-
-#cake
-{
-    grid-area:cake;
-    object-fit: cover;
-    text-align: center;
-}
-
-#stick
-{
-    grid-area:stick;
-    object-fit: cover;
-    text-align: center;
-}
-
-#scookie
-{
-    grid-area:sugarc;
-    object-fit: cover;
-    text-align: center;
-}
-
-#fcookie
-{
-    grid-area:fruitc;
-    object-fit: cover;
-    text-align: center;
-}
-
-/*About Page Grid Items*/
-
-#start
-{
-grid-area:opening;
-object-fit: cover;
-text-align: center;
-}
-
-#about
-{
-font: bold 1.2em times, Serif;
-text-transform: uppercase;
-color: #002256;
-grid-area:about;
-object-fit: cover;
-text-align: center;
-}
-
-#hl
-{
-grid-area:hl;
-object-fit: cover;
-text-align: center;
-}
-
-#hl1
-{
-grid-area:hl1;
-object-fit: cover;
-text-align: center;
-}
-
-#hl2
-{
-grid-area:hl2;
-object-fit: cover;
-text-align: center;
-}
-
-#hl3
-{
-grid-area:hl3;
-object-fit: cover;
-text-align: center;
-}
-
-#hl4
-{
-grid-area:hl4;
-object-fit: cover;
-text-align: center;
-}
 }
 
 /* Media Queries 1000px*/
-@media screen and (max-width: 1000x)
+@media screen and (max-width: 1000px)
 {
-
-    html
-{
-    margin:auto;
-    box-sizing: border-box;
-}
-
-*
-{
-    box-sizing: border-box;
-}
-    /* Home Page Grid Media Queries */
+    /* Home Page Grid Media Queries 1000px*/
 #index_grid
 {
     display: grid;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 500px);
     grid-template-rows: repeat(2, auto);
     grid-template-areas:
     'opener opener'
@@ -829,11 +579,96 @@ text-align: center;
 
     'p3 p4'
 
-    'p5 p6';
+    'p5 p6'
+    
+    'lines fact'
+
+    'lines fact'
+
+    'lines about'
+
+    'end end';
 
 }
 
-/*About Page Grid Media Queries */
+/*About Page Grid Media Queries 1000px*/
+#about_grid
+{
+    display: grid;
+    grid-template-columns:repeat(6, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    'opening opening'
+    'about about'
+    'hl hl'
+    'hl3 hl2' 
+    'hl1 hl4'
+    'end end';
+
+}
+
+/*Contact Page Grid Media Queries 1000px*/
+#contact_grid
+{
+    display: grid;
+    grid-template-columns: repeat(4, 350px);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+    'help help help'
+    'info info info'
+    'work work work'
+    'end end end';
+
+}
+
+/* Menu Page Grid Media Queries 1000px*/
+#menu_grid
+{
+    display: grid;
+    grid-template-columns: repeat(6, 500px);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    'board board'
+    'cup sugarc'
+    'hbun maca'
+    'cake stick'
+    'cheese_cake fruitc'
+    'end end';
+
+}
+}
+
+/* Media Queries 800px*/
+@media screen and (max-width: 800px)
+{
+    /* Home Page Grid Media Queries 800px*/
+#index_grid
+{
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    'opener opener'
+
+    'menu_items menu_items'
+
+    'p1 p3'
+
+    'p2 p4'
+
+    'p6 p5'
+
+    'lines fact'
+
+    'lines fact'
+
+    'lines about'
+
+    'end end';
+
+}
+
+/*About Page Grid Media Queries 800px*/
 #about_grid
 {
     display: grid;
@@ -850,236 +685,33 @@ text-align: center;
 
 }
 
-/*Contact Page Grid Media Queries */
+/*Contact Page Grid Media Queries 800px*/
 #contact_grid
 {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, 800px);
+    grid-template-rows: repeat(1, auto);
     grid-template-areas:
-    'help help help'
-    'info info info'
-    'work work work';
+    'help'
+    'info'
+    'work'
+    'end';
 
 }
 
-/* Menu Page Grid Media Queries */
+/* Menu Page Grid Media Queries 800px*/
 #menu_grid
 {
     display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: repeat(6, 400px);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas:
-    'board board board board board'
-    'cup . . . cheese_cake'
-    'hbun . . . maca'
-    'cake . . . stick'
-    'sugarc . . . fruitc';
+    'board board'
+    'cake cheese_cake'
+    'hbun cup'
+    'maca stick'
+    'sugarc fruitc'
+    'end end';
 
-}
-
-/* Media Queries Items*/
-
-/*Home Page Grid Items*/
-
-#opener
-{
-grid-area:opener;
-object-fit: cover;
-text-align: center;
-}
-
-#menu_items
-{
-font: bold 1.2em times, Serif;
-text-transform: uppercase;
-color: #002256;
-grid-area:menu_items;
-object-fit: cover;
-text-align: center;
-}
-
-#p1
-{
-grid-area:p1;
-object-fit: cover;
-text-align: center;
-}
-
-#p2
-{
-grid-area:p2;
-object-fit: cover;
-text-align: center;
-}
-
-#p3
-{
-grid-area:p3;
-object-fit: cover;
-text-align: center;
-}
-
-#p4
-{
-grid-area:p4;
-object-fit: cover;
-text-align: center;
-}
-
-#p5
-{
-grid-area:p5;
-object-fit: cover;
-text-align: center;
-}
-
-#p6
-{
-grid-area:p6;
-object-fit: cover;
-text-align: center;
-}
-
-/*Contact Page Grid Items*/
-
-#support
-{
-grid-area:help;
-object-fit: cover;
-text-align: center;
-}
-
-#Hours
-{
-grid-area:work;
-object-fit: cover;
-text-align: center;
-}
-
-#info_support
-{
-    grid-area:info;
-    object-fit: cover;
-    text-align: center;
-}
-
-/*Menu Page Grid Items*/
-
-#black_board
-{
-grid-area:board;
-object-fit: cover;
-text-align: center;
-}
-
-#cupcake
-{
-grid-area:cup;
-object-fit: cover;
-text-align: center;
-}
-
-#cheese_cake
-{
-grid-area:cheese_cake;
-object-fit: cover;
-text-align: center;
-}
-
-#macarons
-{
-grid-area:maca;
-object-fit: cover;
-text-align: center;
-}
-
-#honey_bun
-{
-grid-area:hbun;
-object-fit: cover;
-text-align: center;
-}
-
-#cake
-{
-    grid-area:cake;
-    object-fit: cover;
-    text-align: center;
-}
-
-#stick
-{
-    grid-area:stick;
-    object-fit: cover;
-    text-align: center;
-}
-
-#scookie
-{
-    grid-area:sugarc;
-    object-fit: cover;
-    text-align: center;
-}
-
-#fcookie
-{
-    grid-area:fruitc;
-    object-fit: cover;
-    text-align: center;
-}
-
-/*About Page Grid Items*/
-
-#start
-{
-grid-area:opening;
-object-fit: cover;
-text-align: center;
-}
-
-#about
-{
-font: bold 1.2em times, Serif;
-text-transform: uppercase;
-color: #002256;
-grid-area:about;
-object-fit: cover;
-text-align: center;
-}
-
-#hl
-{
-grid-area:hl;
-object-fit: cover;
-text-align: center;
-}
-
-#hl1
-{
-grid-area:hl1;
-object-fit: cover;
-text-align: center;
-}
-
-#hl2
-{
-grid-area:hl2;
-object-fit: cover;
-text-align: center;
-}
-
-#hl3
-{
-grid-area:hl3;
-object-fit: cover;
-text-align: center;
-}
-
-#hl4
-{
-grid-area:hl4;
-object-fit: cover;
-text-align: center;
 }
 }
